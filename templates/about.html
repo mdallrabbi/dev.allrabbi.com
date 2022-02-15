@@ -1,0 +1,632 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  {% block title %}
+  <title>allrabbi.com - about</title>
+  {% endblock title %}
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+</head>
+{% endblock head %}
+
+{% block body %}
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  {% block topbar %}
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:hello@allrabbi.com">hello@allrabbi.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span><a href="tel:+8801557202983">+880 15 5720 2983</a></span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://github.com/mdallrabbi" class="github"><i class="bi bi-github"></i></i></a>
+        <a href="https://stackoverflow.com/users/3867716/md-all-rabbi" class="stackoverflow"><i class="bi bi-stack-overflow"></i></i></a>
+        <a href="https://www.quora.com/profile/Md-All-Rabbi" class="quora"><i class="bi bi-quora"></i></i></a>
+        <a href="https://www.linkedin.com/in/mdallrabbi/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://twitter.com/md_all_rabbi" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/md.all.rabbi" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/md.all.rabbi/" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  {% endblock topbar %}
+
+  <!-- ======= Header ======= -->
+  {% block header %}
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html">MD ALL RABBI</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="{% url 'home' %}">home</a></li>
+          <li><a href="{% url 'about' %}">about</a></li>
+          <!-- <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="pricing.html">Pricing</a></li> -->
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">blog</a></li>
+          <li class="dropdown"><a href="#"><span>activity</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">ai</a></li>
+              <li><a href="#">cloud computing</a></li>
+              <li><a href="#">linux/ubuntu</a></li>
+              <li><a href="#">me on the go</a></li>
+              <li><a href="#">podcast</a></li>
+              <li><a href="#">video logs</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  {% endblock header %}
+  <!-- End Header -->
+
+  {% block main %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2> </h2>
+          <ol>
+            <li><a href="index.html">home</a></li>
+            <li>about</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-up">thinking out of the box is fun</h3>
+              <br>
+              <p data-aos="fade-up">
+                Passionate with software engineering, system architecture, artificial intelligence, machine learning,
+                data engineering, human-machine interaction, large scale development integrations, ethical hacking,
+                and open source technologies.
+              </p>
+              <br>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-book"></i>
+                  <h4>M. Sc in CSE <a href="#">Jahangirnagar University</a></h4>
+                  <p>Artificial Neural Network and Digital Business transformations are my core field of studies.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-book-content"></i>
+                  <h4>B. Sc in CSE <a href="#">Jahangirnagar University</a></h4>
+                  <p>journey of engineering and technologies with computing and real time implementations</p>
+                </div>
+                <br>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-calculator"></i>
+                  <h4>Higher School Certificate<br> <a href="#">Govt. Science College</a> </h4>
+                  <p>Major in Mathematics, Physics, Chemistry, Biology & English with a GPA of 5.00 out of 5.00.</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-abacus"></i>
+                  <h4>Secondery School Certificate<br> <a href="#">Sonarong High School</a></h4>
+                  <p>Major in Mathematics, Physics, Social Science, Chemistry, Biology with a GPA of 5.00 out of 5.00</p>
+                </div>
+              </div>
+              <br>
+              <br>
+              <p data-aos="fade-up">
+                Reading books, learning new, tracking hills, swimming, lost into wild to capture landscapes, analyze rural intelligence,
+                interact with various ecosystems and species are some hobby aside.
+              </p>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <!-- <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our <strong>Team</strong></h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Our Team Section -->
+
+    <!-- ======= Our Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>i've spent most of the time<strong> by learning </strong></h2>
+          <br>
+          <p>vueJS, expressJS, JSON, flutter, laravel, WordPress, phpMyAdmin, MySQL, <b>git, CI,</b> debugging, deployment, <b>AWS, Docker,
+            google analytics,</b> Java, Go, Ruby, R, Assembly. BlockChain, TensorFlow, AirFlow, ElasticSearch, Scrapping, NoSQL,
+            Distributed Computing, <b>Unix, IoS[for switches], Android, IoT,</b> penetration testing, risk assessment, digital protection, network security
+            and <b>DevOPS.</b> among them some mentionable are,
+          </p>
+          <br>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">REST API <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WebPack <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Django <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PostgreSQL <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">bootstrap5 <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Shell Scripting <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Arduino <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Linux Administration <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Nginx <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++<i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CISCO Network <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <br>
+    </section><!-- End Our Skills Section -->
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+        <br>
+        <div class="section-title" data-aos="fade-up">
+          <h2>Some <strong>Noteable Employent</strong> I've done</h2>
+          <p>it's like balancing the joury of education with industry driven knowledges</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-4">
+                  <h4>Looking For</h4>
+                  <p>International Fulltime Employmenys</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                  <h4>Programmer</h4>
+                  <p>Smart-Lab</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                  <h4>Full Stack Software Developer</h4>
+                  <p>Teamswork.CO</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-1">
+                  <h4>Program coordinator</h4>
+                  <p>Bangladesh Open Source Network</p>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 ml-auto" data-aos="fade-left" data-aos-delay="100">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <figure>
+                  <img src="static/assets/img/features-1.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <figure>
+                  <img src="static/assets/img/features-2.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <figure>
+                  <img src="static/assets/img/features-3.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <figure>
+                  <img src="static/assets/img/features-4.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <!-- <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our <strong>Clients</strong></h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Our Clients Section -->
+
+  </main>
+  {% endblock main %}<!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% block footer %}
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>MD ALL RABBI</h3>
+            <p>
+              Room: 223/C, Al Beruni Hall,<br>
+              Jahangirnagar University,<br>
+              Dhaka - 1342,<br>
+              Bangladesh.<br>
+              <br>
+              <strong>Phone:</strong><a href="tel:+8801557202983"> +880 15 5720 2983</a><br>
+              <strong>Email:</strong><a href="mailto:hello@allrabbi.com"> hello@allrabbi.com</a><br>
+              <strong>Skype:</strong><a href="https://join.skype.com/invite/VweSoeFk9LGh"> all.rabbi</a><br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>useful links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Flickr</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Blogger</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">HackerRank</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ResearchGate</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">angel.co</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>can hire at</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fiver</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">UpWork</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">TopTal</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">receptix.de</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">linkedin</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>join to the newsletter</h4>
+            <p>every interaction is an opportunity to exchange, hope we can</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          copyright &copy; 2020-<script>document.write(new Date().getFullYear())</script><strong><span> | allrabbi.com</span></strong>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/ -->
+          <img src="{% static 'assets/img/cc.png'%}" class="img-fluid" alt="">
+          template courtesy <a href="https://bootstrapmade.com/">bootstrapmade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://join.skype.com/invite/VweSoeFk9LGh" class="skype"><i class="bx bxl-skype"></i></a>
+        <a href="https://github.com/mdallrabbi" class="github"><i class="bi bi-github"></i></i></a>
+        <a href="https://www.linkedin.com/in/mdallrabbi/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://twitter.com/md_all_rabbi" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com/md.all.rabbi/" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  {% endblock footer %}
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  {% block js %}
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+  {% endblock js %}
+
+</body>
+{% endblock body %}
+
+</html>
